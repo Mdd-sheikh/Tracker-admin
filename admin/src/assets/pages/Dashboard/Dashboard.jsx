@@ -53,7 +53,7 @@ const Dashboard = () => {
             toast.success("customer data add successfully")
             setTimeout(() => {
                 try {
-                    const postdata = axios.post("http://localhost:5000/adminorder", customerData)
+                    const postdata = axios.post("https://parcel-zjj0.onrender.com/adminorder", customerData)
 
                     console.log("send data succesfully");
                     res.json({ sucess: true, messege: "send successfull" })
@@ -85,7 +85,7 @@ const Dashboard = () => {
 
     const deletehandler = (id) => {
         try {
-            axios.delete(`http://localhost:5000/adminorderdata/${id}`,)
+            axios.delete(`https://parcel-zjj0.onrender.com/adminorderdata/${id}`,)
             setCusData(cusdata.filter((users) => users._id !== id))
             return toast.success("deleted successfully")
         } catch (error) {
@@ -100,7 +100,7 @@ const Dashboard = () => {
 
 
     const gethandler = async () => {
-        const getdata = await axios.get("http://localhost:5000/adminorderdata")
+        const getdata = await axios.get("https://parcel-zjj0.onrender.com/adminorderdata")
         setCusData(getdata.data)
     }
 
@@ -110,7 +110,7 @@ const Dashboard = () => {
 
     const updatehandler = (id, value) => {
         try {
-            axios.put(`http://localhost:5000/adminorderdata/${id}`, { process: value })
+            axios.put(`https://parcel-zjj0.onrender.com/${id}`, { process: value })
 
             console.log("updted sucessfully")
             toast.success("updated process")
