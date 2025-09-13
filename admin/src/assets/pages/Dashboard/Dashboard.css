@@ -1,0 +1,214 @@
+* {
+    text-decoration: none;
+}
+
+
+.Dashboard {
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    padding: 5px;
+}
+
+.Dashboard p {
+    margin-left: 20px;
+    font-size: max(2vw, 18px);
+}
+
+
+.dashboard-container {
+
+    width: 98.5%;
+    margin-top: 30px;
+    color: black;
+    margin-left: px;
+
+}
+
+.table-menu {
+    background-color: white;
+    width: 100%;
+    margin-left: px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 5px;
+}
+
+.new {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-details {
+    display: flex;
+    gap: 90px;
+}
+
+.product-details input {
+    outline: none;
+}
+
+.action-buttons {
+    display: flex;
+
+}
+
+.sl-input {
+    margin-left: 10px;
+}
+
+.edit-button button {
+    margin-right: 20px;
+    width: 60px;
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.customers-data-lists {
+    margin-top: 90px;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgb(165, 161, 161);
+    gap: 30px;
+    display: grid;
+    gap: 50px;
+}
+
+.users-data {
+
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.users-data i{
+    font-size:max(0.7vw,10px);
+    color: green;
+    
+}
+
+.users-data p {
+    font-size: max(1vw, 12px);
+}
+
+.users-data select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: max(4.5vw, 40px);
+    background-color: tomato;
+    color: white;
+    font-size: max(0.8vw, 10px);
+}
+
+.select-btn {
+    background-color: tomato;
+    border: none;
+    height: 30px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: max(4vw, 40px);
+    border-radius: 2px;
+    font-size: max(0.8vw, 10px);
+}
+
+.submit-btn:hover {
+    background-color: rgb(237, 95, 95);
+}
+
+/*  for mobile*/
+.mobile ul {
+    display: none;
+
+
+}
+
+.mobile li {
+    color: white;
+}
+
+@media (max-width:1050px) {
+    .dashboard-container {
+        width: 100%;
+    }
+
+    .table-menu {
+        display: none;
+    }
+
+    .new {
+        display: block;
+    }
+
+    .product-details {
+        display: grid;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .product-details input {
+        width: 170px;
+        height: 30px;
+        outline: none;
+        border: 1px solid grey;
+        align-items: center;
+
+    }
+
+    .sl-input input {
+        margin-left: 60px;
+    }
+
+    .size-input input {
+        margin-left: 75px;
+    }
+
+    .edit-button button {
+        margin-top: 20px;
+        margin-left: 140px;
+        width: 50px;
+        background-color: tomato;
+        color: white;
+        border: none;
+    }
+
+    .mobile ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        color: white;
+
+    }
+
+    .mobile li {
+        color: white;
+    }
+
+    .active {
+        background-color: rgb(219, 142, 129);
+    }
+
+    .users-data {
+        width: 95%;
+        margin: 0;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    .users-data p {
+        font-size: 10px;
+    }
+
+}

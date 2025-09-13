@@ -1,0 +1,31 @@
+.orders-compo {
+    width: 100%;
+    background-color: tomato;
+}
+
+.orders-navbar ul {
+    display: none;
+}
+.orders-compo p{
+    padding: 18px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width:1050px) {
+    .orders-navbar ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        padding: 25px;
+        color: white;
+    }
+    .orders-navbar li{
+        color: white;
+    }
+    .orders-compo p{
+        display: none;
+    }
+}

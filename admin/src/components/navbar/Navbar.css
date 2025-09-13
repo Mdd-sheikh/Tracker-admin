@@ -1,0 +1,105 @@
+.navbar {
+    width: 10%;
+    height: 90%;
+    position: fixed;
+    background-color: tomato;
+    color: aliceblue;
+
+}
+
+.first {
+    text-align: center;
+    margin-top: 20px;
+}
+.first i{
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.last {
+    align-items: center;
+    margin-top: 80px;
+}
+
+.last-page-one {
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dashboard {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+
+.dashboard:hover {
+    background-color: rgb(102, 103, 104);
+    cursor: pointer;
+}
+
+.orders {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+}
+
+.orders:hover {
+    background-color: rgb(102, 103, 104);
+    cursor: pointer;
+}
+
+.customers {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.customers:hover {
+    background-color: rgb(102, 103, 104);
+    cursor: pointer;
+}
+
+.category {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.category:hover {
+    background-color: rgb(102, 103, 104);
+    cursor: pointer;
+}
+
+.product-size {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.product-size:hover {
+    background-color: rgb(102, 103, 104);
+    cursor: pointer;
+}
+
+.last-page-two {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.last-page-two button {
+    border: 1px solid rgb(116, 112, 112);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(102, 103, 104);
+}
+
+@media (max-width:1050px) {
+    .navbar {
+        display: none;
+    }
+}

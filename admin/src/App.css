@@ -1,0 +1,19 @@
+* {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+
+
+}
+
+.home {
+  margin: 0;
+  width: 90%;
+  margin-left: auto;
+
+}
+@media (max-width:1050px) {
+  .home{
+    width: 100%;
+    margin-right: 0;
+  }
+}
